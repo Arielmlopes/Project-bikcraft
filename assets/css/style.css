@@ -23,4 +23,58 @@
     font-size: 1.3rem;
     display: inline-block;
     padding: 15px 5px;
+    position: relative;
 }
+.menus li a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: var(--cor-p1);
+    transition: all 0.5s;
+    position: absolute ;
+
+}
+.menus li a:hover::after{
+    width: 100%;
+}
+.introducao-bg{
+    background-color: var(--cor-12);
+    color: var(--cor-0);
+    box-shadow: inset 0 -120px  white ;
+
+}
+
+.introducao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px;
+}
+
+.conteudo-introducao{
+   align-self: end;
+   padding-bottom: 200px;
+}
+.conteudo-introducao h1{
+    margin-bottom: 35px;
+    font-size: 4rem;
+    line-height: 1.125;
+
+}
+.conteudo-introducao h1 span{
+    color: var(--cor-p1);
+}
+.conteudo-introducao p{
+    margin-bottom: 20px;
+    color: var(--cor-5);
+    font-size: 1.35rem;
+    line-height: 1.5;
+
+}
+
+.img-introducao img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+

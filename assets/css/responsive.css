@@ -3,6 +3,30 @@
         background: var(--cor-11);
         padding: 10px 10px !important;
         border-radius: 4px;
+        transition: all 0.5s;
+    }
+    .menus a:hover{
+        background: var(--cor-10);
+    }
+    .menus a:after{
+        display: none !important;
+    }
+    .introducao{
+        grid-template-columns: 1fr;
+    }
+    .conteudo-introducao h1{
+        margin-bottom: 16px;
+        font-size: 2rem;
+    }
+    .conteudo-introducao {
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+
+    .img-introducao img{
+        height: 300px;
+        width: 100%;
     }
 }
 
