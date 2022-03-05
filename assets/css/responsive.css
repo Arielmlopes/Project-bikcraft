@@ -1,3 +1,8 @@
+@media (max-width: 1200px){
+    .conteudo-introducao h1{
+        font-size: 3rem;
+    }
+}
 @media (max-width: 800px){
     .menus a{
         background: var(--cor-11);
@@ -28,6 +33,12 @@
         height: 300px;
         width: 100%;
     }
+    .bicicleta-lista{
+        padding: 40px 0;
+    }
+    .bicicleta-lista ul{
+        gap: 20px;
+    }
 }
 
 
@@ -42,7 +53,7 @@
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 480px){
     .header-menu{
         justify-content: center;
     }

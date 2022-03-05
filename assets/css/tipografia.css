@@ -1,0 +1,32 @@
+.font-1-xs{
+    font: 400 0.75rem/1.35 'poppins' , sans-serif;
+}
+.font-2-xs{
+    font: 400 0.875rem/1.43 'roboto' , sans-serif;
+}
+.font-1-s{
+    font: 400 0.875rem/1.43 'roboto' , sans-serif;
+}
+
+
+.font-1-grande{
+    font-size: 4rem;
+    line-height: 1.125;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+}
+
+.font-2-l{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+}
+
+.font-1-medio{
+    font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.font-2-pequeno{
+    font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}

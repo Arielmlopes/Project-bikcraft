@@ -20,10 +20,10 @@
 
 .menus li a{
     color: var(--cor-0);
-    font-size: 1.3rem;
     display: inline-block;
     padding: 15px 5px;
     position: relative;
+  
 }
 .menus li a::after{
     content: '';
@@ -41,7 +41,7 @@
 .introducao-bg{
     background-color: var(--cor-12);
     color: var(--cor-0);
-    box-shadow: inset 0 -120px  white ;
+    box-shadow: inset 0 -120px  var(--cor-0) ;
 
 }
 
@@ -57,19 +57,11 @@
 }
 .conteudo-introducao h1{
     margin-bottom: 35px;
-    font-size: 4rem;
-    line-height: 1.125;
+}
 
-}
-.conteudo-introducao h1 span{
-    color: var(--cor-p1);
-}
 .conteudo-introducao p{
     margin-bottom: 20px;
     color: var(--cor-5);
-    font-size: 1.35rem;
-    line-height: 1.5;
-
 }
 
 .img-introducao img{
@@ -78,3 +70,101 @@
     border-radius: 5px;
 }
 
+.bicicleta-lista{
+    padding: 60px 0px;
+}
+.bicicleta-lista a{
+    display: block;
+}
+
+
+.bicicleta-lista h2{
+    margin-bottom: 30px;
+}
+
+.bicicleta-lista ul{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 40px;
+    padding: 0 20px;
+    overflow-x: auto;
+}
+.bicicleta-lista ul li{
+    min-width: 280px;
+}
+.bicicleta-lista ul li h3{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+.bicicleta-lista ul li h3::before{
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    margin-right: 8px;
+    background-color: var(--cor-p1);
+    transition: width 0.2s;
+}
+.bicicleta-lista ul li a:hover h3::before{
+    width: 25px;
+}
+.bicicleta-lista ul li span{
+    padding-left: 20px;
+}
+
+.bg-tech{
+    background-color: var(--cor-11);
+    color: #fff;
+}
+.tecnologia-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px;
+}
+.conteudo-tecnologia{
+    align-self: center;
+}
+.conteudo-tecnologia span{
+    color: var(--cor-5);
+    text-transform: uppercase;
+}
+.conteudo-tecnologia h2{
+    margin-top: 20px;
+}
+.conteudo-tecnologia .text-tech{
+    color: var(--cor-5);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.conteudo-tecnologia .escolha{
+    color: var(--cor-p1);
+    text-transform: uppercase;
+}
+.conteudo-tecnologia .escolha::after{
+    content: "";
+    display: block;
+    width: 250px;
+    height: 3px;
+    background-color: var(--cor-p1);
+}
+ .escolha:hover {
+    color: #fff;
+}
+.especificacoes{
+    display: flex;
+    gap: 25px;
+    margin-top: 80px;
+}
+
+.especificacoes p{
+    color: var(--cor-5);
+    margin-top: 10px;
+}
+
+.especificacoes h3{
+    margin-top: 10px;
+}

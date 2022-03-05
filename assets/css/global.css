@@ -1,26 +1,7 @@
+@import url("tipografia.css");
+@import url('cores.css');
 @import url("style.css");
 @import url("responsive.css");
-:root{
-    --cor-0: #ffffff;
-    --cor-1: #f7f7f7;
-    --cor-2: #ededed;
-    --cor-3: #dedede;
-    --cor-4: #cccccc;
-    --cor-5: #b2b2b2;
-    --cor-6: #9c9c9c;
-    --cor-7: #717171;
-    --cor-8: #595959;
-    --cor-9: #404040;
-    --cor-10: #2e2e2e;
-    --cor-11: #111111;
-    --cor-12: #000000;
-    --cor-p1: #ffbb00;
-    --cor-p2: #e4a30b;
-    --cor-p3: #a66f00;
-    --cor-p4: #664400;
-    --cor-p5: #332200;
-
-}
 
 
 *{
@@ -36,7 +17,10 @@ img{
     max-width: 100%;
     display: block;
 }
+img[src$=".jpg"]{
+    border-radius: 5px;
 
+}
 a{
     text-decoration: none;
 }
@@ -59,8 +43,10 @@ ul{
     box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
     text-transform: uppercase;
     color: var(--cor-p5);
-    font: 600 1.125rem/1.35 "Poppins", sans-serif;
     max-width: max-content;
     border: none;
     cursor: pointer;
+    font-size: 1.125rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
