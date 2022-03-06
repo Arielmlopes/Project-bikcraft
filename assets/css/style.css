@@ -65,6 +65,7 @@
 }
 
 .img-introducao img{
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
@@ -118,6 +119,8 @@
 .bg-tech{
     background-color: var(--cor-11);
     color: #fff;
+    box-shadow: inset 0 -90px var(--cor-0),inset 0 90px var(--cor-0);
+
 }
 .tecnologia-content{
     display: grid;
@@ -126,6 +129,8 @@
 }
 .conteudo-tecnologia{
     align-self: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
 }
 .conteudo-tecnologia span{
     color: var(--cor-5);
@@ -134,22 +139,26 @@
 .conteudo-tecnologia h2{
     margin-top: 20px;
 }
+.conteudo-tecnologia h2 span{
+    color: var(--cor-p1);
+}
 .conteudo-tecnologia .text-tech{
     color: var(--cor-5);
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.conteudo-tecnologia .escolha{
+ .escolha{
+    display: inline-block;
     color: var(--cor-p1);
     text-transform: uppercase;
 }
-.conteudo-tecnologia .escolha::after{
+.escolha::after{
     content: "";
     display: block;
-    width: 250px;
+    width: 100%;
     height: 3px;
-    background-color: var(--cor-p1);
+    background-color: currentColor;
 }
  .escolha:hover {
     color: #fff;
@@ -167,4 +176,11 @@
 
 .especificacoes h3{
     margin-top: 10px;
+    max-width: max-content;
+}
+.img-tech img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
 }

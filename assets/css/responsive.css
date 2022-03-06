@@ -2,6 +2,9 @@
     .conteudo-introducao h1{
         font-size: 3rem;
     }
+    .conteudo-tecnologia h2{
+        font-size: 3rem;
+    }
 }
 @media (max-width: 800px){
     .menus a{
@@ -16,6 +19,7 @@
     .menus a:after{
         display: none !important;
     }
+    /* -------------------------------------------- */
     .introducao{
         grid-template-columns: 1fr;
     }
@@ -27,18 +31,42 @@
         padding-bottom: 50px;
         text-align: center;
     }
-
-
     .img-introducao img{
         height: 300px;
         width: 100%;
     }
+    /* ------------------------------------------- */
     .bicicleta-lista{
         padding: 40px 0;
     }
     .bicicleta-lista ul{
         gap: 20px;
     }
+    /* ------------------------------------------- */
+    .bg-tech{
+        box-shadow: initial;
+    }
+    .tecnologia-content{
+        grid-template-columns: 1fr;
+        
+    }
+    .conteudo-tecnologia{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+    }
+    .conteudo-tecnologia .escolha{
+        margin-top: 30px;
+    }
+    .img-tech img{
+        display: none;
+    }
+    .conteudo-tecnologia h2{
+        font-size: 2rem;
+    }
+  
+  
+
 }
 
 
@@ -57,4 +85,18 @@
     .header-menu{
         justify-content: center;
     }
+    .conteudo-tecnologia > span{
+        font-size: 1rem;
+    }
+    .conteudo-tecnologia h2{
+        font-size: 1.5rem;
+    }
+    .conteudo-tecnologia .escolha{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .especificacoes{
+        flex-wrap: wrap;
+    }
+    
 }
