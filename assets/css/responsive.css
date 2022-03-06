@@ -98,6 +98,9 @@
     .depoimento p{
         font-size: 2rem;
     }
+    .seguros{
+        grid-template-columns: 1fr;
+    }
 
 }
 
@@ -150,5 +153,6 @@
         font-size: 40px;
 
     }
+    
     
 }

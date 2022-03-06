@@ -264,3 +264,74 @@
 .depoimento > span{
     font-size: 23px;
 }
+/* ------------------------------------- */
+.bg-seguros{
+    background-color: var(--cor-11);
+    color: var(--cor-0);
+}
+
+.bg-seguros h2{
+    padding-top: 70px;
+}
+.seguros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.seguro-item{
+    background-color: var(--cor-12);
+    padding: 32px 32px 32px 60px;
+    border-radius: 4px;
+}
+.plano-preco{
+    display: flex;
+    justify-content: space-between;
+}
+.plano-preco > h3{
+    color: var(--cor-5);
+    text-transform: uppercase;
+}
+.preco{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.preco > span{
+    font-size: 0.8rem;
+    color: var(--cor-5);
+}
+.seguro-item ul{
+    margin-top: 50px;
+}
+.seguro-item ul li{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.seguro-item ul li img{
+    width: 13px;
+    height: 9px;
+}
+.seguro-item button{
+    background: var(--cor-10) !important;
+    color: var(--cor-0);
+    transition: 0.5s;
+}
+.seguro-item button:hover{
+    background: var(--cor-9) !important;
+}
+.ouro .plano-preco > h3{
+    color: var(--cor-p1);
+}
+.ouro button{
+    background: var(--cor-p1) !important;
+    color: var(--cor-11);
+}
+.ouro button:hover{
+    background: var(--cor-p3) !important;
+}
