@@ -5,6 +5,10 @@
     .conteudo-tecnologia h2{
         font-size: 3rem;
     }
+    .parceiros h2{
+        font-size: 3rem;
+
+    }
 }
 @media (max-width: 800px){
     .menus a{
@@ -65,8 +69,23 @@
         font-size: 2rem;
     }
   
-  
+    .parceiros{
+        padding-bottom: 60px;
+    }
 
+    .parceiros h2{
+        margin-bottom: 20px;
+    }
+    .parceiros ul {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .parceiros ul li:nth-child(n+3){
+        border-top: 2px solid var(--cor-2);
+    }
+    .parceiros ul li:nth-child(3), .parceiros ul li:nth-child(7){
+        border-left: none;
+    }
+    
 }
 
 
@@ -97,6 +116,10 @@
     }
     .especificacoes{
         flex-wrap: wrap;
+    }
+    .parceiros h2{
+        font-size: 2rem;
+
     }
     
 }

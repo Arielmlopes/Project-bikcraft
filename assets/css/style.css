@@ -184,3 +184,38 @@
     object-fit: cover;
     object-position: left;
 }
+/* -------------------------------------------- */
+.parceiros{
+    padding: 50px 0px;
+}
+.parceiros h2{
+    margin-bottom: 60px;
+}
+.parceiros ul{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.parceiros ul li{
+    padding: 30px;
+    display: flex;
+    border-left: 2px solid var(--cor-2);
+}
+.parceiros ul li img{
+    margin: auto;
+}
+
+.parceiros ul li:first-child{
+    border: none;
+}
+.parceiros ul li:nth-child(5){
+    border: none;
+
+}
+
+.parceiros ul li:nth-child(n+5){
+    border-top: 2px solid var(--cor-2);
+}
