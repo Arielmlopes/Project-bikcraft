@@ -101,6 +101,13 @@
     .seguros{
         grid-template-columns: 1fr;
     }
+    /* ------------------------------------------------ */
+    .footer{
+        grid-template-columns: 1fr 1fr !important;
+    }
+ .footer .footer-logo {
+        display: none;
+    }
 
 }
 
@@ -153,6 +160,8 @@
         font-size: 40px;
 
     }
-    
+    .footer{
+        grid-template-columns: 1fr !important;
+    }
     
 }

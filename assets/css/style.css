@@ -335,3 +335,58 @@
 .ouro button:hover{
     background: var(--cor-p3) !important;
 }
+/* ---------------------------------------------------- */
+.footer-bg{
+    background-color: var(--cor-12);
+}
+.footer{
+    display: grid;
+    grid-template-columns: 3fr 5fr 4fr;
+    gap: 40px;
+    padding-top: 80px !important;
+}
+.footer-contato, .footer-informacoes{
+    color: var(--cor-0);
+}
+.redesSociais{
+    display: flex;
+    gap: 30px;
+}
+.footer-contato > ul li,.footer-contato > ul li a  {
+    color: var(--cor-5);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.footer-contato h3, .footer-informacoes h3{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.footer-contato .contato li:nth-child(even)::after{
+    content: "";
+    display: block;
+    max-width: 360px;
+    height: 2px;
+    background-color: var(--cor-11);
+    margin-top: 16px;
+}
+.footer-informacoes ul li{
+    margin-bottom: 20px;
+    
+}
+.footer-informacoes ul a {
+    color: var(--cor-5);
+    font-size: 1.3rem;
+}
+.footer-informacoes ul a:hover, .footer-contato > ul li a:hover {
+    color: var(--cor-0);
+}
+
+.footer-bg >p{
+    color: var(--cor-5);
+    padding-bottom: 60px;
+    font-size: 1.125rem;
+
+}
