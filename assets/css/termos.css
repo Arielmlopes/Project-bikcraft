@@ -1,0 +1,15 @@
+.termos{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.termos h2{
+    margin-bottom: 20px;
+    font: 600 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.termos p{
+    margin-bottom: 30px;
+    max-width: 75ch;
+    line-height: 1.6;
+    color: var(--cor-9);
+}
