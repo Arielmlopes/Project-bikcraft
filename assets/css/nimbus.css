@@ -1,0 +1,78 @@
+.nimbus-title p{
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.bicicleta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.bike-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.bike-img img{
+    flex: 1;
+    min-width: 200px;
+}
+.bike-img img:first-child{
+    min-width: 100%;
+}
+
+.bicicleta-conteudo p{
+    margin-bottom: 32px;
+    font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.bicicleta-comprar{
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+
+    justify-items: start;
+    gap: 8px 12px; 
+}
+
+.bicicleta-comprar span{
+    display: flex;
+
+    gap: 8px;
+    align-items: center;
+    margin-top: 8px;
+    background-color: var(--cor-12);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.bicicleta-conteudo h2{
+    text-transform: uppercase;
+    margin-top: 49px;
+    margin-bottom: 29px;
+
+}
+.bicicletas-informacoes ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: var(--cor-12);
+    padding: 40px;
+    border-radius: 4px;
+}
+.bicicletas-informacoes ul li{
+    color: var(--cor-5);
+}
+.bicicletas-informacoes ul li img{
+    margin-bottom: 8px;
+}
+.bicicletas-informacoes ul li h3{
+    margin-bottom: 8px;
+    font: 400 1.355rem/1.35 "Poppins", sans-serif;
+}
+.bicicletas-informacoes ul li p{
+    color: var(--cor-7);
+    font-size: 1.1rem;
+}
