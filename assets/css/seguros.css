@@ -1,0 +1,111 @@
+.cont-seguro{
+    margin-top: 0 !important;
+}
+.vantagens-bg{
+    background-color: var(--cor-12);
+    
+}
+.vantagens{
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+.vantagens h2{
+    font-size: 3.4rem;
+    margin-bottom: 80px !important;
+}
+.vantagens ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 30px;
+
+}
+.vantagens ul li p{
+    line-height: 1.6;
+    color: var(--cor-5);
+}
+
+.vantagens ul li h3{
+    font: 400 1.5rem/1.5 "Poppins", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.perguntas{
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+.perguntas h2{
+    font-size: 4rem;
+    margin-bottom: 60px;
+}
+.perguntas dl > div{
+    padding: 20px;
+    border-radius: 4px;
+
+}
+.perguntas dl > div:nth-child(odd){
+    background-color: var(--cor-1);
+}
+.perguntas dt{
+    font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.perguntas dt::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background-color: var(--cor-p1);
+}
+.perguntas dt::after{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 6px;
+    background-image: url(../img/icones/seta-abrir.svg);
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+.perguntas dt:hover::after{
+    transform: rotate(180deg);
+}
+.perguntas dd{
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    padding-left: 20px;
+    max-width: 80ch;
+    margin-top: 8px;
+}
+
+@media (max-width:800px){
+    .vantagens ul{
+        grid-template-columns: 1fr 1fr;
+    }
+    .perguntas{
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+    .perguntas h2{
+        font-size: 2rem;
+    }
+
+}
+@media (max-width:600px){
+    .vantagens ul{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:450px){
+    .perguntas{
+        padding-top: 40px !important;
+        padding-bottom: 60px !important;
+    }
+    .perguntas h2{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+}
