@@ -6,6 +6,8 @@
 @import url('bicicletas.css');
 @import url('seguros.css');
 @import url('nimbus.css');
+@import url('contato.css');
+@import url('formulario.css');
 
 *{
     margin: 0;

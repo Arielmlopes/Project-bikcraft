@@ -1,0 +1,92 @@
+#contato{
+    background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
+}
+
+.contato{
+display: grid;
+grid-template-columns: 5fr 7fr;
+padding-top: 0 !important;
+}
+.dados-contato, .contato-formulario{
+    padding: 100px 50px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+}
+.dados-contato{
+    background: var(--cor-12);
+    border-radius: 5px 0 0 5px;
+}
+.contato-formulario{
+    border-radius: 0 5px 5px 0;
+    background: var(--cor-0);
+}
+
+.dados-contato h2{
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.endereco{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.endereco p{
+    margin-bottom: 10px;
+    padding: 0 0 0 30px;
+}
+.endereco p:first-child{
+    display: flex;
+    padding: 0;
+}
+.endereco p:first-child::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/icones/local.svg);
+    background-repeat: no-repeat;
+    width: 17px;
+    margin-right: 13px;
+}
+.contatos-meios{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.contatos-meios a{
+    color: var(--cor-4);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 0 0 30px;
+    margin-bottom: 10px;
+}
+
+.contatos-meios a:first-child{
+    display: flex;
+    padding: 0;
+}
+.contatos-meios a:first-child::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/icones/email.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contatos-meios a:last-child{
+    margin-top: 20px;
+    display: flex;
+    padding: 0;
+}
+
+.contatos-meios a:last-child::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/icones/telefone.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    margin-right: 9px;
+}
+.dados-contato .redesSociais{
+    margin-top: 40px;
+    margin-left: 40px;
+}
