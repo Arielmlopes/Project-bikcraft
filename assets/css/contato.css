@@ -8,7 +8,7 @@ grid-template-columns: 5fr 7fr;
 padding-top: 0 !important;
 }
 .dados-contato, .contato-formulario{
-    padding: 100px 50px;
+    padding: 50px 50px;
     box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
 }
 .dados-contato{
@@ -89,4 +89,94 @@ padding-top: 0 !important;
 .dados-contato .redesSociais{
     margin-top: 40px;
     margin-left: 40px;
+}
+
+.LojasLocais{
+    margin-top: 50px !important;
+    margin-bottom: 100px !important;
+}
+.LojasLocais h2{
+    margin-bottom: 50px;
+}
+.local-lojas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.contentLocal{
+    background-color: var(--cor-0);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.contentLocal h3{
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.content-dados{
+    padding: 30px;
+}
+.info-dados{
+    display: flex;
+    gap: 50px;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+.info-dados p{
+    margin-bottom: 10px;
+    color: var(--cor-7);
+}
+.info-dados div{
+    position: relative;
+}
+.info-dados div::before{
+    content: "";
+    position: absolute;
+    left: -10px;
+    height: 50px;
+    width: 2px;
+    background-color: var(--cor-4);
+}
+.content-dados > span{
+    display: block;
+    margin-top: 30px;
+    font-size: 1.15rem;
+    color: var(--cor-9);
+    display: flex;
+    gap: 10px;
+}
+.content-dados > span::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url(../img/icones/horario.svg);
+}
+@media (max-width: 800px){
+  .contato{
+      grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 700px){
+    .local-lojas{
+        grid-template-columns: 1fr;
+    }
+    .form button{
+        font-size: 1rem !important;
+        white-space: nowrap;
+    }
+}
+@media (max-width: 480px){
+    .LojasLocais h2{
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 550px){
+   .form div:nth-child(1){
+       grid-column: 1/-1;
+   }
+   .form div:nth-child(2){
+    grid-column: 1/-1;
+}
 }

@@ -70,7 +70,7 @@ ul{
     background-color: var(--cor-11);
 }
 .title-content{
-    padding: 60px 0px;
+    padding: 60px 20px;
 }
 .title-content p{
     text-transform: uppercase;

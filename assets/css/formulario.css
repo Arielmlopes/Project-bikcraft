@@ -1,3 +1,36 @@
 .form{
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form label{
+    display: block;
+    font: 400 1rem/1.5 "poppins", sans-serif;
+    margin-bottom: 3px;
+}
+
+
+.form div:nth-child(3){
+    grid-column: 1/-1;
+}
+.form div:nth-child(4){
+    grid-column: 1/-1;
+}
+.form input, .form textarea{
+    font: 400 1rem/1.5 "roboto", sans-serif;
+    background-color: var(--cor-1);
+    border: 1px solid var(--cor-2);
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+}
+.form input::placeholder,.form textarea::placeholder{
+    color: var(--cor-6) ;
+    font: 400 1rem/1.5 "roboto", sans-serif;
+
+}
+.form input:focus, .form textarea:focus{
+    outline: none;
+    border: 1px solid rgb(255, 208, 0);
+    box-shadow: 0 0 0 2px #fea;
 }
