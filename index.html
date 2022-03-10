@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="assets/css/global.css" as="style">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,9 +40,10 @@
                     sua velocidade com a Bikcraft.</p>
                 <button class="botao"><a href="bicicletas.html">Escolha a sua</a> </button>
             </div>
-            <div class="img-introducao">
+            <picture class="img-introducao">
+                <source media="(max-width:800px)" srcset="assets/img/bicicletas/nimbus.jpg">
                 <img src="assets/img/fotos/introducao.jpg" alt="">
-            </div>
+            </picture>
         </div>
     </main>
 

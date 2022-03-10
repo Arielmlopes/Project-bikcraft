@@ -1,0 +1,196 @@
+#orcamento{
+    background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
+}
+
+.orcamento-dados,.orcamento-produto{
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px 100px 30px;
+}
+#orcamento .font-1-pequeno2{
+    font-size: 1rem;
+}
+#orcamento h2{
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px !important;
+    margin-top: 20px;
+
+}
+#orcamento h2::before{
+    content: "";
+    width: 5px;
+    height: 10px;
+    background-color: var(--cor-p1);
+
+}
+/* ----------------------------------------- */
+ 
+.orcamento-dados {
+    background-color: var(--cor-0);
+    border-radius: 0 5px 5px 0;
+}
+.orcamento-produto{
+    background-color: var(--cor-12);
+    border-radius: 5px 0 0 5px ;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    gap: 20px;
+}
+.orcamento-conteudo{
+    display: none;
+}
+.orcamento-produto label{
+    font: 400 1rem/1.5 "poppins", sans-serif;
+    color: var(--cor-4);
+    background-color: var(--cor-10);
+    padding: 12px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    border: 1px solid var(--cor-12);
+
+
+}
+.orcamento-produto label::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--cor-6);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.orcamento-produto input:checked + label::before{
+    border-color: var(--cor-7);
+    box-shadow:inset 0 0 0 3px var(--cor-0), inset 0 0 0 5px var(--cor-7) ;
+
+}
+
+.orcamento-produto label:hover{
+    background-color: var(--cor-9);
+
+}
+.orcamento-produto input:focus + label{
+    box-shadow: 0 0 0 2px var(--cor-p1);
+    border: 1px solid var(--cor-12);
+}
+.orcamento-produto  label span{
+    display: none;
+}
+.orcamento-produto input:checked + label span{
+    display: inline-block;
+}
+.orcamento-produto > *{
+    grid-column: 1/-1;
+}
+.orcamento-produto > label{
+    grid-column: initial;
+}
+.orcamento-produto input:checked + label,
+.orcamento-produto input:checked + label
+{
+    background-color: var(--cor-0);
+    color: var(--cor-11);
+}
+#bikcraft:checked ~ #orcamento-bikcraft,
+#seguro:checked ~ #orcamento-seguro
+{
+   display: grid;
+   gap: 20px;
+}
+.orcamento-produto input{
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+
+.orcamento-detalhe{
+    display: none;
+    background-color: var(--cor-0);
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.orcamento-detalhe ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--cor-11);
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    color: var(--cor-7);
+}
+.orcamento-detalhe ul li img{
+    width: 20px;
+}
+.detalhe-img img{
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.orcamento-produto input:checked +label + .orcamento-detalhe{
+    display: grid;
+}
+/* ----------------------------------------- */
+.orcamento{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    padding-bottom: 120px;
+}
+
+.form2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form2 h2{
+    grid-column: 1/-1;
+    text-transform: uppercase;
+}
+.form2 label{
+    display: block;
+    font: 400 1rem/1.5 "poppins", sans-serif;
+    margin-bottom: 3px;
+}
+
+.form2 input, .form2 textarea{
+    font: 400 1rem/1.5 "roboto", sans-serif;
+    background-color: var(--cor-1);
+    border: 1px solid var(--cor-2);
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+}
+.form2 input::placeholder,.form2 textarea::placeholder{
+    color: var(--cor-6) ;
+    font: 400 1rem/1.5 "roboto", sans-serif;
+
+}
+.form2 input:focus, .form2 textarea:focus{
+    outline: none;
+    border: 1px solid rgb(255, 208, 0);
+    box-shadow: 0 0 0 2px #fea;
+}
+
+
+@media (max-width:800px){
+    .orcamento{
+        grid-template-columns: 1fr;
+    }
+    .form2{
+    grid-template-columns:  1fr;
+    }
+    .orcamento-dados{
+        padding: 20px;
+    }
+}
