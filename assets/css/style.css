@@ -28,15 +28,16 @@
 .menus li a::after{
     content: '';
     display: block;
-    height: 2px;
+    height: 3px;
     width: 0%;
     background-color: var(--cor-p1);
     transition: all 0.5s;
     position: absolute ;
 
 }
-.menus li a:hover::after{
-    width: 100%;
+.menus li a:hover::after,
+.menus li a.ativo::after{
+    width: 90%;
 }
 .introducao-bg{
     background-color: var(--cor-12);
