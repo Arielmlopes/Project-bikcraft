@@ -47,22 +47,26 @@
 .perguntas dl > div:nth-child(odd){
     background-color: var(--cor-1);
 }
-.perguntas dt{
+.perguntas button{
     font: 600 1.125rem/1.35 "Poppins", sans-serif;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
 }
-.perguntas dt::before{
+.perguntas button::before{
     content: "";
     display: inline-block;
     width: 12px;
     height: 8px;
     background-color: var(--cor-p1);
 }
-.perguntas dt::after{
+.perguntas button::after{
     content: "";
     display: inline-block;
     width: 14px;
@@ -71,14 +75,23 @@
     background-repeat: no-repeat;
     transition: 0.5s;
 }
-.perguntas dt:hover::after{
+.perguntas button:hover::after,
+.perguntas button[aria-expanded="true"]::after{
     transform: rotate(180deg);
+}
+.perguntas dd{
+    display: none;
+
+}
+.perguntas dd.ativa{
+    display: block;
 }
 .perguntas dd{
     font: 400 1rem/1.5 "Roboto", sans-serif;
     padding-left: 20px;
     max-width: 80ch;
-    margin-top: 8px;
+    margin-top: 10px;
+
 }
 
 @media (max-width:800px){
